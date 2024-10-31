@@ -1,0 +1,84 @@
+.catalog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.llaveros-layout {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aumenta ligeramente el espacio entre los contenedores */
+    width: 60%;
+    margin: 100px 0;
+}
+
+.llaveros-container, .llaveros-details {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f6f1ec;
+    padding: 50px;
+    border-radius: 30px;
+    width: 100%; /* Aumenta aún más el tamaño de los contenedores */
+    max-width: 1500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.llaveros-header h1 {
+    font-size: 72px;
+    color: #4c4c4c;
+    margin-bottom: 30px;
+}
+
+.llaveros-header p {
+    font-size: 42px;
+    color: #4c4c4c;
+    margin: 5px 0;
+}
+
+.llaveros-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.llavero-item {
+    text-align: center;
+    font-size: 48px;
+    color: #4c4c4c;
+}
+
+.llavero-item p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.llavero-item img {
+    width: 900px; /* Tamaño mayor para las imágenes (doble del tamaño anterior) */
+    height: 900px; /* Ajusta la altura para mantener la proporción */
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.llavero-item img:hover {
+    transform: scale(1.05);
+}
+
+.price-tag {
+    background-color: #c49b77;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    top: -8px;
+    margin: 10px auto 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

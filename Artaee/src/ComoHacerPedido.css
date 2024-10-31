@@ -1,0 +1,35 @@
+/* ComoHacerPedido.css */
+.catalog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.como-hacer-pedido-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0; /* Margen vertical */
+}
+
+.pedido-container,
+.pedido-instructions,
+.pedido-datos-pago {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f6f1ec;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Ajusta según necesites */
+    max-width: 400px;
+    margin: 0 10px; /* Espaciado horizontal */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pedido-container img,
+.pedido-instructions img,
+.pedido-datos-pago img {
+    width: 10%; /* O ajusta a un valor menor como 70% o 60% */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+

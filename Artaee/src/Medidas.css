@@ -1,0 +1,50 @@
+/* Medidas.css */
+
+.catalog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medidas-container {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f6f1ec;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black; /* Cambia el color del texto a negro */
+}
+
+.medidas-container img {
+    width: 100%; /* O ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #4c4c4c;
+    padding: 10px;
+    text-align: center;
+    color: black; /* Asegura que el texto en la tabla sea negro */
+}
+
+th {
+    background-color: #c49b77; /* Color de fondo para los encabezados */
+    color: white; /* Color del texto de los encabezados */
+}
+
+/* Agregar estilos para títulos y párrafos en el contenedor */
+.medidas-container h1, .medidas-container h2, .medidas-container p {
+    color: black; /* Asegura que los títulos y párrafos sean negros */
+}
+
+/* Opcional: Puedes agregar más estilos para personalizar según tus preferencias */

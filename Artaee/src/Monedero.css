@@ -1,0 +1,61 @@
+/* Monedero.css */
+.monedero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9B7959;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.monedero-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.monedero-subtitle {
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.monedero-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.monedero-details {
+    font-size: 1rem;
+    color: #000; /* Cambia el color del texto a negro */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.monedero-details h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.monedero-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.monedero-details li {
+    margin-bottom: 5px;
+}
+
+.monedero-details p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}

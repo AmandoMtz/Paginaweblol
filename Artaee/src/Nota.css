@@ -1,0 +1,24 @@
+/* Nota.css */
+.catalog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medidas-container {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f6f1ec;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+}
+
+.medidas-container img {
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

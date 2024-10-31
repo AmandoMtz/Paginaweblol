@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita desplazamiento si no es necesario */
+}
+
+/* Estilos generales para la página del catálogo */
+.catalog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9B7959; /* Color piel claro */
+    width: 100vw; /* Ocupar todo el ancho de la ventana */
+    height: 100vh; /* Ocupar toda la altura de la ventana */
+    padding: 0; /* Elimina padding superior */
+    overflow-y: auto; /* Permite desplazamiento vertical solo si es necesario */
+}
+
+/* Estilos de la cabecera */
+.catalog-header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c1cb90; /* Color de cabecera */
+    color: #fff;
+    width: 100%;
+    border: none; /* Elimina cualquier borde */
+    position: relative; /* Asegura que se mantenga en la parte superior */
+    top: 0; /* Asegura que esté en la parte superior */
+    z-index: 10; /* Asegura que la cabecera esté por encima de otros elementos */
+}
+
+.header-title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+}
+
+.italic {
+    font-style: italic;
+    color: #e57373;
+}
+
+/* Estilos para la navegación en la cabecera */
+.header-nav {
+    margin-top: 10px;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cambiar color a blanco para palabras específicas */
+.header-list li:nth-child(1) a { /* Playeras */
+    color: white;
+}
+
+.header-list li:nth-child(2) a { /* Monederos */
+    color: white;
+}
+
+.header-list li:nth-child(3) a { /* Llaveros */
+    color: white;
+}
+
+.header-list li:nth-child(4) a { /* Portavasos */
+    color: white;
+}
+
+.header-list li:nth-child(5) a { /* Medidas */
+    color: white;
+}
+
+.header-list li:nth-child(6) a { /* ¿Cómo hago un pedido? */
+    color: white;
+}
+
+.header-list li:nth-child(7) a { /* Envíos y entregas */
+    color: white;
+}
+
+.header-list li:nth-child(8) a { /* Notas */
+    color: white;
+}
+
+.header-list li {
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-list li:hover,
+.header-list li:focus {
+    outline: 2px solid #FFD700; /* Color dorado para el contorno de resaltado */
+    outline-offset: 4px;
+}
+
+.header-list li:active,
+.header-list li:visited,
+.header-list li:focus {
+    color: white !important; /* Forzar color blanco para prevenir cambio a azul */
+}
+
+/* Contenedor principal para las colecciones */
+.catalog-container {
+    display: flex;
+    flex-direction: column; /* Asegura que se apilen verticalmente */
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Centra las colecciones */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Estilos de los contenedores de las colecciones */
+.catalog-border,
+.additional-container,
+.bangtan-container {
+    border: 2px solid #000; /* Bordes negros */
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco */
+    width: 100%;
+    max-width: 600px;
+}
+
+.collection {
+    margin-bottom: 20px;
+}
+
+.collection-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para los productos */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el precio y las tallas */
+.product-price {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-size {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0; 
+}
+
+/* Colores de la prenda */
+.product-colors {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+/* Colores específicos para los swatches */
+.color-swatch.black {
+    background-color: #000;
+}
+
+.color-swatch.green {
+    background-color: #4caf50;
+}
+
+.color-swatch.white {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.color-swatch.red {
+    background-color: #e57373;
+}
+
+/* Estilos para la sección de Bangtan Ternurines */
+.bangtan-title {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bangtan-info {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bangtan-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bangtan-item {
+    text-align: center;
+}
+
+/* Adaptabilidad para dispositivos medianos y pequeños */
+@media (max-width: 1024px) {
+    .catalog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-border,
+    .additional-container,
+    .bangtan-container {
+        max-width: 90%;
+    }
+}
+
+/* Para pantallas muy pequeñas, como móviles */
+@media (max-width: 600px) {
+    .product,
+    .bangtan-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        max-width: 80%;
+    }
+}
